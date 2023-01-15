@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+nav{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    background-color: #154734;
+
+}
+
+
+nav a{
+    margin-left: 10px;
+    color: white;
+}
+
+header {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color:white;
+    background-color: #e87500;
+    background-size: cover;
+
+}
+
+.header-img{
+    margin: 0 auto;
+    padding-top: 30px;
+    max-width: 100%;
+    height: auto;
+}
+
+header *{
+    position: relative;
+    z-index: 1;
+}
+
+header p{
+    font-size: 20px;
+    margin: 0;
+}
+
+header h1{
+    font-size: 50px;
+    margin-top: 0;
+    margin-bottom: 4px;
+    
+}
+
+@media screen and (max-width: 600px) {
+    .navbar a {
+        float: none;
+        width: 100%;
+    }
+}
+
+.project-section{
+    text-align: center;
+    color: white;
+    background-color: #154734;
+}
+.project-grid{
+    display: grid;
+    grid-gap: 6rem;
+    margin: 0 auto;
+    padding-bottom: 40px;
+}
+
+.project-images{
+    height: calc(100% - 1.8rem);
+    width: 100%;
+    object-fit: cover;
+}
+
+.project-name{
+    color: white;
+}
+
+section{
+    padding: 20px;
+}
+
+.socials-links{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.socials-links a{
+    margin: 0 5px;
+    font-size: 50px;
+    color:white;
+}
+
+.button{
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    border-radius: 2px;
+    color: white;
+    text-decoration: none;
+    background: #e87500;
+}
+
+a{
+    text-decoration: none;
+}
+
+.socials-section{
+    background-color: #e87500;
+    color:white;
+    
+}
